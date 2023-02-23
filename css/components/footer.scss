@@ -1,0 +1,45 @@
+.footer {
+
+    &__container {
+        background-color: $footerBackgroundColor;
+        padding: 67px 182px;
+    }
+
+    &__logo {
+        fill: $textColor;
+        margin-bottom: 33px;
+    }
+
+    &-menu {
+        flex-grow: 1;
+
+        &__title {
+            color: $textColor;
+            font-weight: 700;
+            line-height: 16px;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            margin-bottom: 33px;
+        }
+        
+        &__sections {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__item {
+
+            font-family: $baseFont;
+            font-style: normal;
+            font-weight: 400;
+            font-size: $pFontSize;
+            line-height: 14px;
+            color: $textColor;
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+

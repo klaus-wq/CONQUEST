@@ -1,0 +1,36 @@
+$containerWidth: 1366px;
+$h1FontSize: 45px;
+$h2FontSize: 32px;
+$h3FontSize: 30px;
+$h4FontSize: 16px;
+$h5FontSize: 14px;
+$pFontSize: 12px;
+
+$mainColor: #1B1A17;
+$textColor: #FFFFFF;
+$menuColor: #555248;
+$footerBackgroundColor: #444240;
+$strokeColor: #8B8371;
+$favouritesColor: #E6C8B4;
+$backgroundColor: #FDFDFB;
+$borderColor: #C4C0B6;
+$borderImgColor: #F4E6DD;
+$ellipseColor: #EAE3D4;
+$gradientColor: #F7F5EF;
+$btnColor: #D4B098;
+
+$baseFont: 'Roboto';
+$addFont: 'Prata';
+$otherFont: 'Playfair Display';
+
+@import "https://necolas.github.io/normalize.css/latest/normalize.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Prata&family=Roboto:wght@300;400;700&display=swap');
+
+@import "layout";
+@import "./components/header.scss";
+@import "./components/collection.scss";
+@import "./components/catalog.scss";
+@import "./components/quality.scss";
+@import "./components/news.scss";
+@import "./components/footer.scss";

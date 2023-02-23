@@ -1,0 +1,105 @@
+.collection {
+
+    &__container {
+        background: $backgroundColor;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 79px;
+        padding: 0 0 0 120px;
+    }
+
+    &__content {
+        z-index: 2;
+        padding-top: 236px;
+        display: flex;
+    }
+
+    &__line {
+        margin-top: 30px;
+    }
+
+    &__texts {
+        margin-left: 15px;
+    }
+
+    &__main-title {
+        white-space: nowrap;
+    }
+
+    &__title {
+        margin-bottom: 39px;
+    }
+
+    &__text {
+        font-weight: 300;
+        line-height: 21px;
+        margin-bottom: 64px;
+    }
+
+    &__watch {
+        height: 768px;
+        background: url("../../img/watch_main.png") 50% 50% no-repeat;
+        z-index: 2;
+    }
+
+    &__ellipse {
+        position: absolute;
+        width: 496px;
+        height: 944px;
+        left: 469px;
+        top: -88px;
+        z-index: 1;
+        background: linear-gradient(180deg, rgba(234, 227, 212, 0) 0%, $ellipseColor 100%);
+        mix-blend-mode: normal;
+        border-radius: 100% 0 0 100% / 50% 0 0 50%;
+    }
+
+    &__button {
+        background-color: $footerBackgroundColor;
+    }
+}
+
+.button {
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 26px 38px;
+    border: 0;
+}
+
+.line {
+    width: 50px;
+    height: 0;
+    border: 1px solid $strokeColor;
+}
+
+.watch {
+
+    &__price {
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+
+        &--collection {
+            margin: 138px 0 0 55px;
+        }
+    }
+
+    &__ruble--collection {
+        align-self: baseline;
+    }
+
+    &__text {
+        font-family: $addFont;
+        font-weight: 400;
+        line-height: 18px;
+        color: $mainColor;
+    }
+
+    &__diameter {
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        margin: 482px 0 0 537px;
+    }
+}

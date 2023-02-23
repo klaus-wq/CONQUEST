@@ -1,0 +1,115 @@
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    // min-width: $containerWidth + 20px;
+    min-height: 100%;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: $containerWidth;
+    margin: 0 auto;
+    position: relative;
+    // justify-content: space-between;
+    display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    li {
+        list-style: none;
+    }
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $h1FontSize;
+    line-height: 60px;
+    color: $mainColor;
+}
+
+h2 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $h2FontSize;
+    line-height: 43px;
+    color: $mainColor;
+}
+
+h3 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    color: $mainColor;
+}
+
+h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: $h4FontSize;
+    line-height: 19px;
+    color: $footerBackgroundColor;
+}
+
+h5 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $h5FontSize;
+    line-height: 21px; 
+    color: $menuColor;
+}
+
+p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $pFontSize;
+    line-height: 14px;
+    color: $textColor;
+}

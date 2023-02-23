@@ -1,0 +1,54 @@
+.header {
+
+    &__container {
+        background: $backgroundColor;
+        display: flex;
+        justify-content: space-between;
+        padding: 35px 100px 28px 100px;
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+
+    &__list {
+        display: flex;
+        column-gap: 65px;
+    }
+}
+
+.icons {
+    display: flex;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        column-gap: 23px;
+    }
+
+    &__item {
+        position: relative;
+    }
+}
+
+.favourites {
+
+    &__number {
+        position: absolute;
+        background-color: $favouritesColor;
+        font-family: $baseFont;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 9px;
+        text-align: center;
+        color: $mainColor;
+        border-radius: 50%;
+        padding: 2px 1px 2px 1px;
+        width: 14px;
+        height: 14px;
+        top: -3px;
+        right: -7px;
+    }
+}
