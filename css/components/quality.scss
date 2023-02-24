@@ -2,14 +2,38 @@
 
     &__container {
         background: linear-gradient(to right, $gradientColor 30%, $backgroundColor 30%);
-        padding: 52px 222px 21px 177px;
+        padding: 52px 116px 21px 177px;
         margin-bottom: 80px;
+        overflow: hidden;
     }
 
     &__blocks {
+        position: relative;
         display: flex;
         align-items: center;
         column-gap: 70px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            right: -279px;
+            top: -215px;
+            border-radius: 50%;
+            border: 1px solid $btnColor;
+            width: 335px;
+            height: 335px;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            right: -735px;
+            top: -64px;
+            border-radius: 50%;
+            border: 1px solid $btnColor;
+            width: 744px;
+            height: 744px;
+        }
     }
 
     &__title {
