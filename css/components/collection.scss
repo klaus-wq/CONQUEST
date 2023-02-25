@@ -5,7 +5,10 @@
         position: relative;
         overflow: hidden;
         margin-bottom: 79px;
-        padding: 0 0 0 120px;
+        padding: 0 100px 0 120px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     &__content {
@@ -36,9 +39,16 @@
         margin-bottom: 64px;
     }
 
+    &__watches {
+        position: relative;
+        height: 780px;
+        width: fit-content;
+    }
+
     &__watch {
-        height: 768px;
-        background: url("../img/watch_main.png") 50% 50% no-repeat;
+        position: relative;
+        // height: 100vh;
+        // background: url("../img/watch_main.png") 50% 50% no-repeat;
         z-index: 2;
     }
 
@@ -46,9 +56,8 @@
         position: absolute;
         width: 496px;
         height: 944px;
-        left: 469px;
-        top: -88px;
-        z-index: 1;
+        left: -160px;
+        top: -60px;
         background: linear-gradient(180deg, rgba(234, 227, 212, 0) 0%, $ellipseColor 100%);
         mix-blend-mode: normal;
         border-radius: 100% 0 0 100% / 50% 0 0 50%;
@@ -75,14 +84,31 @@
 
 .watch {
 
+    &__picture {
+        // height: 100vh;
+    }
+
     &__price {
         display: flex;
         column-gap: 10px;
         align-items: center;
 
         &--collection {
-            margin: 138px 0 0 55px;
+            // margin: 138px 0 0 55px;
+            position: absolute;
+            top: 17.5%;
+            left: -18%;
         }
+    }
+
+    &__diameter {
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        // margin: 482px 0 0 537px;
+        position: absolute;
+        top: 80%;
+        right: -15%;
     }
 
     &__ruble--collection {
@@ -95,11 +121,97 @@
         line-height: 18px;
         color: $mainColor;
     }
+}
 
-    &__diameter {
-        display: flex;
-        column-gap: 10px;
-        align-items: center;
-        margin: 482px 0 0 537px;
+@media (max-width: 1300px) {
+    
+    .collection {
+
+        &__container {
+            justify-content: center;
+        }
+
+        &__content {
+            padding-top: 250px;
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    
+    .collection {
+
+        &__watch {
+            // width: 100vw;
+        }
+    }
+}
+
+@media (max-width: 770px) {
+
+    .button {
+        padding: 20px 30px;;
+    }
+    
+    .watch {
+
+        &__diameter {
+            left: -18%;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+
+        &__picture {
+            height: 360px;
+        }
+
+        &__price--collection {
+            left: -30%;
+        }
+
+        &__diameter {
+            left: -40%;
+        }
+    }
+
+    .collection {
+
+        &__container {
+            padding: 0 6px 0 6px;
+            margin-bottom: 20px;
+        }
+
+        &__watches {
+            height: fit-content;
+        }
+
+        &__content {
+            padding-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        &__main-title {
+            font-size: $h2FontSize;
+        }
+
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            margin-bottom: 20px;
+        }
+
+        &__ellipse {
+            width: 0;
+        }
+
+        &__watch {
+            margin-left: 106px;
+        }
+    }
+
+    .line {
+        width: 20px;
     }
 }

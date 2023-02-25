@@ -34,7 +34,7 @@
             font-weight: 400;
             font-size: $pFontSize;
             line-height: 14px;
-            color: $textColor;
+            color: rgba(255, 255, 255, 0.75);;
 
             &:not(:last-child) {
                 margin-bottom: 15px;
@@ -43,3 +43,44 @@
     }
 }
 
+@media (max-width: 990px) {
+
+    .footer {
+
+        &__container {
+            padding: 20px 20px;
+        }
+    
+        &-menu__sections {
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        &-menu__col {
+
+            width: 200px;
+            text-align: center;
+            margin-bottom: 5px;
+
+            &:first-child {
+                flex-basis: 100%;
+            }
+        }
+
+        &-menu__sections {
+            justify-content: space-around;
+        }
+    }
+}
+
+@media (max-width: 770px) {
+
+    .footer {
+
+        &-menu__col {
+            width: 150px;
+        }
+    }
+}
