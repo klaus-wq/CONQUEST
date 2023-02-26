@@ -47,8 +47,6 @@
 
     &__watch {
         position: relative;
-        // height: 100vh;
-        // background: url("../img/watch_main.png") 50% 50% no-repeat;
         z-index: 2;
     }
 
@@ -84,17 +82,12 @@
 
 .watch {
 
-    &__picture {
-        // height: 100vh;
-    }
-
     &__price {
         display: flex;
         column-gap: 10px;
         align-items: center;
 
         &--collection {
-            // margin: 138px 0 0 55px;
             position: absolute;
             top: 17.5%;
             left: -18%;
@@ -105,7 +98,6 @@
         display: flex;
         column-gap: 10px;
         align-items: center;
-        // margin: 482px 0 0 537px;
         position: absolute;
         top: 80%;
         right: -15%;
@@ -133,16 +125,6 @@
 
         &__content {
             padding-top: 250px;
-        }
-    }
-}
-
-@media (max-width: 990px) {
-    
-    .collection {
-
-        &__watch {
-            // width: 100vw;
         }
     }
 }

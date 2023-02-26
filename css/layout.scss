@@ -14,7 +14,6 @@ body {
 .wrapper {
     position: relative;
     width: 100%;
-    // min-width: $containerWidth + 20px;
     min-height: 100%;
     overflow: hidden;
     justify-content: space-between;
@@ -24,8 +23,6 @@ body {
     max-width: $containerWidth;
     margin: 0 auto;
     position: relative;
-    // justify-content: space-between;
-    display: flex;
 }
 
 h1,
